@@ -5,4 +5,35 @@ Author URI: http://mahmudinm.github.io
 Description: Windy Theme for blogging Wordpress
 Version: 1.0.0
 Tags: bootstrap
+# Load font-google
+# Body
+# Navbar
 */
+
+
+/*--------------------------------------------------------------
+## Load font
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700');
+
+/*--------------------------------------------------------------
+## Body | Common Item
+--------------------------------------------------------------*/
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;
+}
+
+/*--------------------------------------------------------------
+## Navbar Custom
+--------------------------------------------------------------*/
+.navbar-dark .navbar-nav .nav-link {
+	font-family: 'Poppins', sans-serif;
+}
+.navbar-dark .navbar-brand {
+	font-family: 'Poppins', sans-serif;
+	font-size: 26px;
+}

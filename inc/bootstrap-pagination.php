@@ -1,6 +1,6 @@
 <?php  
 
-function fellowtuts_wpbs_pagination($pages = '', $range = 2) 
+function windy_wpbs_pagination($pages = '', $range = 2) 
 {  
 	$showitems = ($range * 2) + 1;  
 	global $paged;

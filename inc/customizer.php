@@ -1,23 +1,23 @@
 <?php 
 
-function learn_customize_register( $wp_customize ) {
+function windy_customize_register( $wp_customize ) {
 
 	$wp_customize->add_section( 'navbar', array(
 		'priority'       => 160,
-		'title'          => __( 'Navbar Settings', 'learn' ),
-		'description'    => __( 'Change Navbar Settings', 'learn' )
+		'title'          => __( 'Navbar Settings', 'windy' ),
+		'description'    => __( 'Change Navbar Settings', 'windy' )
 	) );
 	
 			$wp_customize->add_setting( 'navbar_color', array(
 				'type'                 => 'theme_mod',
-				'default'              => __( '#343a40', 'learn' )
+				'default'              => __( '#343a40', 'windy' )
 			) );
 
 			$wp_customize->add_control( new WP_Customize_Color_Control(
 				$wp_customize,
 				'navbar_color',
 				array(
-					'label'      => __( 'Navbar Color', 'learn' ),
+					'label'      => __( 'Navbar Color', 'windy' ),
 					'section'    => 'navbar',
 					'settings'   => 'navbar_color',
 				)
@@ -25,12 +25,12 @@ function learn_customize_register( $wp_customize ) {
 	
 			$wp_customize->add_setting( 'navbar_align', array(
 				'type'                 => 'theme_mod',
-				'default'              => __( 'mr-auto', 'learn' )
+				'default'              => __( 'mr-auto', 'windy' )
 			) );
 
 			$wp_customize->add_control( 'navbar_align', array(
-				'label'       => __( 'Navbar Align', 'learn' ),
-				'description' => __( 'Navbar Align Left Right', 'learn' ),
+				'label'       => __( 'Navbar Align', 'windy' ),
+				'description' => __( 'Navbar Align Left Right', 'windy' ),
 				'section'     => 'navbar',
 				'type'        => 'select', // text (default | variations email/url/number/hidden/date), textarea, checkbox, radio/select (requires choices array below), dropdown-pages
 				'choices'  => array(
@@ -42,55 +42,55 @@ function learn_customize_register( $wp_customize ) {
 			
 	$wp_customize->add_section( 'social', array(
 		'priority'       => 160,
-		'title'          => __( 'Social Color', 'learn' ),
-		'description'    => __( 'Social Color Settings', 'learn' )
+		'title'          => __( 'Social Color', 'windy' ),
+		'description'    => __( 'Social Color Settings', 'windy' )
 	) );
 
 			$wp_customize->add_setting( 'social_color', array(
 				'type'                 => 'theme_mod',
-				'default'              => __( '#1e73be', 'learn' )
+				'default'              => __( '#1e73be', 'windy' )
 			) );
 
 			$wp_customize->add_control( new WP_Customize_Color_Control(
 				$wp_customize,
 				'social_color',
 				array(
-					'label'      => __( 'Social Color', 'learn' ),
+					'label'      => __( 'Social Color', 'windy' ),
 					'section'    => 'social',
 					'settings'   => 'social_color',
 				)
 			) );	
 	
 			
-	$wp_customize->add_section( 'learn_slider', array(
+	$wp_customize->add_section( 'windy_slider', array(
 		'priority'       => 160,
-		'title'          => __( 'Slider', 'learn' ),
-		'description'    => __( 'Slider Settings', 'learn' )
+		'title'          => __( 'Slider', 'windy' ),
+		'description'    => __( 'Slider Settings', 'windy' )
 	) );
 
-			$wp_customize->add_setting( 'learn_slider_cat', array(
+			$wp_customize->add_setting( 'windy_slider_cat', array(
 				'type'                 => 'refresh',
 				'default'              => 0,
-				'sanitize_callback' 	 => 'learn_sanitize_slidecat'
+				'sanitize_callback' 	 => 'windy_sanitize_slidecat'
 			) );
 			
-			$wp_customize->add_control( 'learn_slider_cat', array(
-				'label'       => __( 'Choose Category', 'learn' ),
-				'section'     => 'learn_slider',
+			$wp_customize->add_control( 'windy_slider_cat', array(
+				'label'       => __( 'Choose Category', 'windy' ),
+				'section'     => 'windy_slider',
 				'type'        => 'select',
-				'choices'  => learn_cats()
+				'choices'  => windy_cats()
 			) );
 
-			$wp_customize->add_setting( 'learn_slider_hide', array(
+			$wp_customize->add_setting( 'windy_slider_hide', array(
 				'default'              => 0,
 				'transport'            => 'refresh',
-				'sanitize_callback'    => 'learn_sanitize_checkbox'
+				'sanitize_callback'    => 'windy_sanitize_checkbox'
 			) );
 			
 			// Control: Name.
-			$wp_customize->add_control( 'learn_slider_hide', array(
-				'label'       => __( 'Show Slider', 'learn' ),
-				'section'     => 'learn_slider',
+			$wp_customize->add_control( 'windy_slider_hide', array(
+				'label'       => __( 'Show Slider', 'windy' ),
+				'section'     => 'windy_slider',
 				'type'        => 'checkbox',
 			) );
 			
@@ -99,11 +99,11 @@ function learn_customize_register( $wp_customize ) {
 
 /**
  * Adds sanitization callback function: Slider Category (slidecat)
- * @package Learn
+ * @package windy
  */
-function learn_sanitize_slidecat( $input ) {
+function windy_sanitize_slidecat( $input ) {
 
-	if ( array_key_exists( $input ,  learn_cats() ) ) {
+	if ( array_key_exists( $input ,  windy_cats() ) ) {
 		return $input;
 	} else {
 		return '';
@@ -111,7 +111,7 @@ function learn_sanitize_slidecat( $input ) {
 
 }
 
-function learn_sanitize_checkbox( $input ) {
+function windy_sanitize_checkbox( $input ) {
 	if ( $input == 1 ) {
 		return 1;
 	} else {
@@ -120,4 +120,4 @@ function learn_sanitize_checkbox( $input ) {
 }
 
 
-add_action( 'customize_register', 'learn_customize_register' );
+add_action( 'customize_register', 'windy_customize_register' );

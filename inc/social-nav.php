@@ -1,13 +1,13 @@
 <?php  
 
-add_action( 'init', 'learn_register_social_menu' );
+add_action( 'init', 'windy_register_social_menu' );
 
-function learn_register_social_menu() {
-	register_nav_menu( 'social-menu', _x( 'Social Menu', 'nav menu location', 'learn' ) );
+function windy_register_social_menu() {
+	register_nav_menu( 'social-menu', _x( 'Social Menu', 'nav menu location', 'windy' ) );
 }
 
-if ( ! function_exists( 'learn_social_icons' ) ) :
-	function learn_social_icons() {
+if ( ! function_exists( 'windy_social_icons' ) ) :
+	function windy_social_icons() {
 		if ( has_nav_menu( 'social-menu' ) ) {
 			wp_nav_menu( 
 				array( 
@@ -26,7 +26,7 @@ if ( ! function_exists( 'learn_social_icons' ) ) :
 	}
 endif;
 
-function learn_social_css() { 
+function windy_social_css() { 
 	?>
 		<style type="text/css">
       #social li{
@@ -115,6 +115,6 @@ function learn_social_css() {
 		</style>
 	<?php 
 }
-add_action( 'wp_head', 'learn_social_css', 10 );
+add_action( 'wp_head', 'windy_social_css', 10 );
 
 ?>

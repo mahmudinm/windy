@@ -3,22 +3,22 @@
 /**
  * Social Widget
  */
-class laern_social_widget extends WP_Widget
+class windy_social_widget extends WP_Widget
 {
 
 	public function __construct()
 	{
 	    $widget_options = array(
-	    	'classname' => 'learn_social',
+	    	'classname' => 'windy_social',
 	    	'description' => 'This is an Examplle Widget'
 	    );
-	    parent::__construct( 'learn_social', 'Learn Social Widget', $widget_options );
+	    parent::__construct( 'windy_social', 'windy Social Widget', $widget_options );
 	}
 
 	public function widget( $args, $instance )
 	{
 			extract($args);
-			$title = isset( $instance['title'] ) ? $instance['title'] : esc_html__( 'Follow Us', 'learn' );
+			$title = isset( $instance['title'] ) ? $instance['title'] : esc_html__( 'Follow Us', 'windy' );
 	    $blog_title = get_bloginfo( 'name' );
 	    $tagline = get_bloginfo( 'description' );
 			
@@ -29,7 +29,7 @@ class laern_social_widget extends WP_Widget
 
 		?>
 			
-			<?php learn_social_icons(); ?>
+			<?php windy_social_icons(); ?>
 
     <?php 
 
@@ -38,7 +38,7 @@ class laern_social_widget extends WP_Widget
 
 	public function form( $instance )
 	{
-		  $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'Follow Us', 'learn' ); 
+		  $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'Follow Us', 'windy' ); 
 
 		  ?>
 				<p>

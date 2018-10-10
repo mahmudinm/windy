@@ -15,7 +15,7 @@
 					<?php endwhile ?>
 
 					<!-- Post number paginate -->
-					<?= fellowtuts_wpbs_pagination(); ?>
+					<?= windy_wpbs_pagination(); ?>
 
 				</div>				
 

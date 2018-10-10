@@ -1,7 +1,7 @@
 <?php  
 
 
-function learn_cats() {
+function windy_cats() {
 	$cats = [];
 	$cats[0] = 'All';
 
@@ -12,10 +12,10 @@ function learn_cats() {
 	return $cats;
 }
 
-if ( ! function_exists( 'learn_featured_slider' ) ) {
+if ( ! function_exists( 'windy_featured_slider' ) ) {
 
-function learn_featured_slider() {
-	if ( ( is_home() || is_front_page() ) && get_theme_mod( 'learn_slider_hide' ) == 1 ) {
+function windy_featured_slider() {
+	if ( ( is_home() || is_front_page() ) && get_theme_mod( 'windy_slider_hide' ) == 1 ) {
 
 			echo '<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">';
 				
@@ -27,7 +27,7 @@ function learn_featured_slider() {
 					
 					echo '<div class="carousel-inner" style="height:400px;">';
 
-					$slidecat = get_theme_mod( 'learn_slider_cat' );
+					$slidecat = get_theme_mod( 'windy_slider_cat' );
 
 					$query = new WP_Query( array( 'cat' => $slidecat, 'posts_per_page' => -1 ) );
 					

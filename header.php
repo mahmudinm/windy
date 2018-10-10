@@ -8,8 +8,8 @@
 		<title><?= get_bloginfo( 'title' ); ?></title>
 		<?php wp_head(); ?>
 		<style>
-			.bg-dark {
-				background-color: <?= get_theme_mod( 'navbar_color', '#343a40' ); ?> !important;
+			.bg-custom {
+				background-color: <?= get_theme_mod( 'navbar_color', '#3f72af' ); ?> !important;
 			}
 			.social_icon {
 		    background: <?= get_theme_mod( 'social_color', '#1e73be' ); ?>;
@@ -19,9 +19,9 @@
 
 	<body>
 		
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-md navbar-dark bg-custom">
 			<div class="container">
-				<a class="navbar-brand" href="<?php home_url(); ?>"><?= get_bloginfo( 'title' ); ?></a>
+				<a class="navbar-brand" href="<?= esc_url( home_url('/') ); ?>"><?= get_bloginfo( 'title' ); ?></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -32,7 +32,7 @@
 					'container'         => 'div',
 					'container_class'   => 'collapse navbar-collapse',
 					'container_id'      => 'bs-example-navbar-collapse-1',
-					'menu_class'        => 'nav navbar-nav '.get_theme_mod( 'navbar_align', 'mr-auto' ) ,
+					'menu_class'        => 'nav navbar-nav '.get_theme_mod( 'navbar_align', 'ml-auto' ) ,
 					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 					'walker'            => new WP_Bootstrap_Navwalker(),
 				) );
@@ -44,5 +44,5 @@
 		<div class="container">
 			
 			<div class="">
-				<?= learn_featured_slider(); ?>
+				<?= windy_featured_slider(); ?>
 			</div>
