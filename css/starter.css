@@ -9,10 +9,6 @@
   padding: 2rem 0;
 }
 
-.navbar {
-	margin-bottom: 40px;
-}
-
 .widget {
 	list-style: none;
 }
@@ -63,7 +59,6 @@
 #social li a span {
     display: none;
 }
-
 
 .footer {
 	padding: 20px;
