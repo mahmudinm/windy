@@ -21,5 +21,4 @@ function change_nav_title( $title )
         $title
     );
 }
-
 ?>

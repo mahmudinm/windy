@@ -24,6 +24,10 @@ function windy_scripts() {
 	wp_enqueue_script( 'jquery' );
 
 	wp_enqueue_script( 'windy-bootstrap-js', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js' );
+	
+	wp_register_script( 'script-script', get_template_directory_uri() . '/js/script.js','','1.1', true );
+
+	wp_enqueue_script( 'script-script' );
 
 }
 add_action( 'wp_enqueue_scripts', 'windy_scripts' );
@@ -47,6 +51,7 @@ add_action( 'widgets_init', 'windy_widget' );
 require_once( get_template_directory() . '/inc/widgets/widget-social.php' );
 
 // Replaces the excerpt "Read More" text by a link
+
 function new_excerpt_more($more) {
        global $post;
 	return '...';
@@ -58,9 +63,15 @@ function windy_setup() {
 
 	add_theme_support( 'post-thumbnails' );			
 	add_theme_support( 'custom-background' );
+	add_theme_support( 'custom-logo', array(
+		'width'       => 200,
+		'height'      => 50,
+		'flex-width'  => true,
+	) );	
 
 }
 add_action( 'after_setup_theme', 'windy_setup' );
+
 
 
 require_once get_template_directory() .'/inc/filter_menu_nav.php';

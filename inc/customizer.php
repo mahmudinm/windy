@@ -10,7 +10,7 @@ function windy_customize_register( $wp_customize ) {
 	
 			$wp_customize->add_setting( 'navbar_color', array(
 				'type'                 => 'theme_mod',
-				'default'              => __( '#343a40', 'windy' )
+				'default'              => __( '#3f72af', 'windy' )
 			) );
 
 			$wp_customize->add_control( new WP_Customize_Color_Control(
@@ -25,7 +25,7 @@ function windy_customize_register( $wp_customize ) {
 	
 			$wp_customize->add_setting( 'navbar_align', array(
 				'type'                 => 'theme_mod',
-				'default'              => __( 'mr-auto', 'windy' )
+				'default'              => __( 'ml-auto', 'windy' )
 			) );
 
 			$wp_customize->add_control( 'navbar_align', array(
