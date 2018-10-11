@@ -62,6 +62,9 @@ function windy_setup() {
 }
 add_action( 'after_setup_theme', 'windy_setup' );
 
+
+require_once get_template_directory() .'/inc/filter_menu_nav.php';
+
 require_once get_template_directory() .'/inc/extras.php';
 
 require_once get_template_directory() .'/inc/class-wp-bootstrap-navwalker.php';
