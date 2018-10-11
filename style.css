@@ -181,3 +181,27 @@ h1, h2, h3, h4, h5, h6 {
 		  .hamburger--elastic-r.is-active .hamburger-inner::after {
 		    transform: translate3d(0, -20px, 0) rotate(270deg);
 		    transition-delay: 0.075s; }
+
+/*--------------------------------------------------------------
+## Content Index
+--------------------------------------------------------------*/
+.content {
+	background: white;
+	-webkit-transition: box-shadow .2s ease;
+	-moz-transition: box-shadow .2s ease;
+	-ms-transition: box-shadow .2s ease;
+	-o-transition: box-shadow .2s ease;
+	transition: box-shadow .2s ease;
+}
+
+.content:hover {
+	/*background: snow;*/
+	-webkit-box-shadow: 2px 0px 19px -2px rgba(186,186,186,1);
+	-moz-box-shadow: 2px 0px 19px -2px rgba(186,186,186,1);
+	box-shadow: 2px 0px 19px -2px rgba(186,186,186,1);
+}
+
+	.heading-content {
+		margin-top: -10px;
+		border-radius: 3px;
+	}

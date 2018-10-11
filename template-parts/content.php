@@ -1,17 +1,25 @@
-<h2><?php the_title(); ?></h2>
+<div class="d-flex flex-column flex-md-row mt-5 py-4 px-3 content">
 
-<?php if (has_post_thumbnail()): ?>
+	<?php if (has_post_thumbnail()): ?>
 
-	<?php the_post_thumbnail( 'medium', ['class' => 'img-thumbnail rounded '] ); ?>
+	  <p class="mb-3 mb-md-0 mr-md-3 w-100">
 
-<?php endif ?>
+			<?php the_post_thumbnail( 'medium', ['class' => 'rounded mr-3'] ); ?>
 
-<p>By <b><?php the_author(); ?></b> <i class="fa fa-clock-o"></i> <?php the_time( 'F jS Y g:i a' ); ?> </p>
+	  </p>
 
-<p>
+	<?php endif ?>
 
-	<?php the_excerpt(); ?>
+  <div>
 
-	<a href="<?php the_permalink(); ?>">Read More</a>
-	
-</p>
+		<h2 class="heading-content"><?php the_title(); ?></h2>
+
+		<p>By <b><?php the_author(); ?></b> <i class="fa fa-clock-o"></i> <?php the_time( 'F jS Y g:i a' ); ?> </p>
+
+		<?php the_excerpt(); ?>
+
+		<a href="<?php the_permalink(); ?>">Read More</a>
+
+  </div>
+
+</div>  
