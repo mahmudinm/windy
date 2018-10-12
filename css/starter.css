@@ -16,11 +16,18 @@
 .widgettitle {
     padding-bottom: 15px;
     border-bottom: 1px solid #e3e3e3;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+.widgettitle::before {
+    content: "#";
 }
 
 .widget ul {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 0px;
     margin-left: 0px;
 }
 
@@ -63,4 +70,16 @@
 .footer {
 	padding: 20px;
 	background: #333;
+}
+
+.search-field {
+    border-radius: 0px;
+    border: 2px solid #333;
+}
+
+.btn-search {
+    border-radius: 0px;
+    border: 2px solid #333;
+    padding: 3px 10px;
+    border-left: 0px;
 }
