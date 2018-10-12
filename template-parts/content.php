@@ -12,13 +12,21 @@
 
   <div>
 
-		<h2 class="heading-content"><?php the_title(); ?></h2>
+		<h2 class="heading-content" >
+
+			<a href="<?php the_permalink(); ?>">
+					
+				<?php the_title(); ?>
+						
+			</a>
+
+		</h2>
 
 		<p>By <b><?php the_author(); ?></b> <i class="fa fa-clock-o"></i> <?php the_time( 'F jS Y g:i a' ); ?> </p>
 
 		<?php the_excerpt(); ?>
 
-		<a href="<?php the_permalink(); ?>">Read More</a>
+	  <a href="<?php the_permalink(); ?>" class="roll-link"><span data-title="Read More">Read More</span></a>		
 
   </div>
 

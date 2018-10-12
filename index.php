@@ -6,7 +6,7 @@
 
 			<div class="row">
 
-				<div class="col-md-8">
+				<div class="col-md-9">
 
 					<?php while (have_posts()): the_post(); ?>
 							
@@ -19,7 +19,7 @@
 
 				</div>				
 
-				<div class="col-md-4">
+				<div class="col-md-3">
 					
 					<?php dynamic_sidebar('sidebar1'); ?>
 
