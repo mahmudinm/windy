@@ -1,4 +1,4 @@
-<div class="d-flex flex-column flex-md-row mt-5 py-4 px-3 content">
+<div class="d-flex flex-column flex-md-row mb-4 py-4 px-3 content">
 
 	<?php if (has_post_thumbnail()): ?>
 

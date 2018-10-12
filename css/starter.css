@@ -9,6 +9,10 @@
   padding: 2rem 0;
 }
 
+.sidebar {
+    background: #fff;
+}
+
 .widget {
 	list-style: none;
 }
@@ -74,12 +78,12 @@
 
 .search-field {
     border-radius: 0px;
-    border: 2px solid #333;
+    border: 1px solid #333;
 }
 
 .btn-search {
     border-radius: 0px;
-    border: 2px solid #333;
+    border: 1px solid #333;
     padding: 3px 10px;
     border-left: 0px;
 }

@@ -19,7 +19,7 @@
 
 				</div>				
 
-				<div class="col-md-3">
+				<div class="col-md-3 p-4 sidebar">
 					
 					<?php dynamic_sidebar('sidebar1'); ?>
 
