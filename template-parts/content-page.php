@@ -1,9 +1,7 @@
-<?php  
-// if (has_post_thumbnail()) {
-// 	the_post_thumbnail( 'large', ['class' => 'rounded img-responsive'] );
-// }
-?>
+<div class="py-4 px-3 content">
 
-<h1><?php the_title(); ?></h1>
+	<h1><?php the_title(); ?></h1>
 
-<p><?php the_content(); ?></p>
+	<p><?php the_content(); ?></p>
+
+</div>

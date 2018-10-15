@@ -3,8 +3,22 @@
 	<?php if (have_posts()): ?>
 		
 		<?php if (has_post_thumbnail()): ?>
+			
+			</div><!-- End container -->
 
-			<?php the_post_thumbnail( 'large', ['class' => 'thumbnail-page'] ); ?>
+			<div style="background: url(<?= get_the_post_thumbnail_url( null, 'large' ); ?>) no-repeat;background-size: cover;" class="hero-page">
+
+				<?php while (have_posts()): the_post(); ?>
+						
+						<!-- <?= get_the_post_thumbnail_url( null, 'large' ); ?> -->
+
+						<h2 class="text-center hero-page__heading"><?php the_title(); ?></h2>
+
+				<?php endwhile ?>
+
+			</div>
+			
+			<div class="container">
 			
 		<?php endif ?>
 
@@ -12,7 +26,7 @@
 
 			<div class="row">
 
-				<div class="col-md-8">
+				<div class="col-md-9">
 
 					<?php while (have_posts()): the_post(); ?>
 							
@@ -22,7 +36,7 @@
 
 				</div>				
 
-				<div class="col-md-4">
+				<div class="col-md-3 p-4 sidebar">
 					
 					<?php dynamic_sidebar('sidebar1'); ?>
 
