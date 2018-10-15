@@ -14,8 +14,13 @@
 
 					<?php endwhile ?>
 
-					<!-- Post number paginate -->
-					<!-- <?= windy_wpbs_pagination(); ?> -->
+					<div class="d-flex">
+
+						<div class=""><?php previous_posts_link( 'Prev post' ); ?></div>
+
+						<div class="ml-auto "><?php next_posts_link( 'Next post' ); ?></div>
+
+					</div>
 
 				</div>				
 

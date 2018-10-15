@@ -58,7 +58,19 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+// Next Prev Post Custom 
+add_filter('next_posts_link_attributes', 'posts_link_attributes_1');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes_2');
 
+function posts_link_attributes_1() {
+    return 'class="btn btn-outline-primary btn--pagination"';
+}
+function posts_link_attributes_2() {
+    return 'class="btn btn-outline-primary btn--pagination"';
+}
+
+
+// Setup Windy
 function windy_setup() {
 
 	add_theme_support( 'post-thumbnails' );			
@@ -81,6 +93,8 @@ require_once get_template_directory() .'/inc/extras.php';
 require_once get_template_directory() .'/inc/class-wp-bootstrap-navwalker.php';
 
 require_once get_template_directory() .'/inc/bootstrap-pagination.php';
+
+require_once get_template_directory() .'/inc/windy-pagination.php';
 
 require_once get_template_directory() .'/inc/customizer.php';
 
