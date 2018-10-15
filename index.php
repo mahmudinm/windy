@@ -15,7 +15,7 @@
 					<?php endwhile ?>
 
 					<!-- Post number paginate -->
-					<?= windy_wpbs_pagination(); ?>
+					<!-- <?= windy_wpbs_pagination(); ?> -->
 
 				</div>				
 
@@ -29,6 +29,11 @@
 
 		</div>
 
-	<?php endif ?>
+	<?php else: ?>
+			
+			<h1>No Content Found</h1>
+		
+	<?php endif ?>			
+
 
 <?php get_footer(); ?>

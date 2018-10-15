@@ -285,3 +285,12 @@ h1, h2, h3, h4, h5, h6 {
 		       -ms-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
 		       transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
 		}		
+	
+		/* Content badge*/
+		.content__badge {
+	    padding: 5px;
+	    background: #7b7b7b;
+	    color: #fff;
+	    font-weight: bold;
+	    font-size: 12px;			
+		}
