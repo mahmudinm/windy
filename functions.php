@@ -19,9 +19,9 @@ function windy_scripts() {
 
 	wp_enqueue_style( 'windy-starter', get_template_directory_uri(). '/css/starter.css' );
 
-	wp_enqueue_script( 'jquery' );
-
 	wp_enqueue_style( 'windy-style', get_template_directory_uri(). '/style.css' );
+
+	wp_enqueue_script( 'jquery' );
 
 	wp_enqueue_script( 'windy-bootstrap-js', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js' );
 	

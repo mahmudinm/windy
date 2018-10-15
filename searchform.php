@@ -9,11 +9,10 @@
 
 	  <div class="input-group-append">
 
-	    <button class="btn btn-outline-secondary btn-search" type="button"><span class="fa fa-search"></span></button>
+	    <button class="btn btn-outline-secondary btn-search" type="submit"><span class="fa fa-search"></span></button>
 
 	  </div>
 
 	</div>
 
 </form> 
-
