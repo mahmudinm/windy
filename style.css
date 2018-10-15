@@ -8,6 +8,8 @@ Tags: bootstrap
 # Load font-google
 # Body
 # Navbar
+# Content
+# Coment Form
 */
 
 
@@ -284,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 		       -moz-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
 		       -ms-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
 		       transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
-		}		
+		}
 	
 		/* Content badge*/
 		.content__badge {
@@ -294,3 +296,23 @@ h1, h2, h3, h4, h5, h6 {
 	    font-weight: bold;
 	    font-size: 12px;			
 		}
+		.content__badge:hover {
+	    color: #fff;
+	    text-decoration: none;
+		}
+
+/*--------------------------------------------------------------
+## Coment Form
+--------------------------------------------------------------*/
+.coment-form {
+	border-radius: 0px;
+	border: 1px solid #333;
+  padding: 15px;
+}
+
+.btn--coment {
+  font-family: 'Poppins';
+  background: #3f72af;
+  border: none;
+  border-radius: 0px;
+}
