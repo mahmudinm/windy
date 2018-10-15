@@ -1,5 +1,5 @@
-<?php get_header(); ?>
-	
+<?php get_header(); ?> 
+
 	<?php if (have_posts()): ?>
 		
 		<div class="starter-template">
@@ -13,10 +13,7 @@
 								<?php get_template_part( 'template-parts/content-single', get_post_format() ); ?>				
 
 					<?php endwhile ?>
-
-					<!-- Post number paginate -->
-					<?= windy_wpbs_pagination(); ?>
-
+					
 				</div>				
 
 				<div class="col-md-3 p-4 sidebar">
