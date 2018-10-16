@@ -9,7 +9,7 @@ Author URI: http://mahmudinm.github.io<br>
 -------------------------------------------------------
 
 # Screenshot
-![Screeshot index page](https://github.com/mahmudinm/windy/raw/master/screensshot.png)
+![Screeshot index page](https://github.com/mahmudinm/windy/blob/master/screenshot.png)
 
 # Credits
 * FontAwesome (http://fontawesome.io) 
