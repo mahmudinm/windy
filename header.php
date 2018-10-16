@@ -12,7 +12,7 @@
 				background-color: <?= get_theme_mod( 'navbar_color', '#3f72af' ); ?> !important;
 			}
 			.social_icon {
-		    background: <?= get_theme_mod( 'social_color', '#fff' ); ?>;
+		    background: <?= get_theme_mod( 'social_color', 'transparent' ); ?>;
 			}
 		</style>
 		<?php if (is_admin_bar_showing()): ?>
