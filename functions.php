@@ -17,9 +17,11 @@ function windy_scripts() {
 
 	wp_enqueue_style( 'windy-font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
 
+	wp_enqueue_style( 'windy-style', get_template_directory_uri(). '/style.css' );
+
 	wp_enqueue_style( 'windy-starter', get_template_directory_uri(). '/css/starter.css' );
 
-	wp_enqueue_style( 'windy-style', get_template_directory_uri(). '/style.css' );
+	wp_enqueue_style( 'windy-custom-style', get_template_directory_uri(). '/css/custom-style.css' );
 
 	wp_enqueue_script( 'jquery' );
 
