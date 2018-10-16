@@ -1,17 +1,43 @@
-
 		</div><!-- /.container -->
-<!-- 		<footer class="footer">
+
+		<footer class="footer">
+
 			<div class="container">
-				<div class="col-sm-12">
-					<div class="text-right">
-						<a href="#">Some text</a>
+					
+					<div class="row">
+
+						<?php get_sidebar( 'footer' ); ?>
+
+						<div class="clearfix"></div>
+
 					</div>
-				</div>
+
 			</div>
-		</footer> -->
+
+		</footer>
+
+		<footer class="footer-credit">
+			
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12">
+
+						<p>Windy Made By Mahmudinm</p>
+						
+					</div>					
+
+				</div>
+				
+			</div>
+
+		</footer>
 		
 		<?php wp_footer(); ?>
+
 	</body>
+
 </html>
 
 

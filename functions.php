@@ -43,6 +43,21 @@ function windy_widget() {
 		'id' => 'sidebar1'
 	]);
 
+	register_sidebar([
+		'name' => 'Footer 1',
+		'id' => 'footer1'
+	]);
+
+	register_sidebar([
+		'name' => 'Footer 2',
+		'id' => 'footer2'
+	]);
+
+	register_sidebar([
+		'name' => 'Footer 3',
+		'id' => 'footer3'
+	]);
+
 	register_widget( 'windy_social_widget' );
 
 }
