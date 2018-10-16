@@ -61,5 +61,7 @@
 		<div class="container">
 			
 			<div class="">
+
 				<?= windy_featured_slider(); ?>
+				
 			</div>

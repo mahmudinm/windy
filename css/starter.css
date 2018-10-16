@@ -258,3 +258,17 @@ ol.commentlist li.thread-odd {}
 .footer-credit p {
   margin-bottom: 0;
 }
+
+/*--------------------------------------------------------------
+## Carousel
+--------------------------------------------------------------*/
+.heading-carousel a {
+  font-weight: bold;
+  color: #fff;
+  transition: all .4s ease;
+}
+
+.heading-carousel a:hover {
+  color: #007bff;
+  text-decoration: none;
+}

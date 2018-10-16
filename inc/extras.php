@@ -35,7 +35,7 @@ if ( ! function_exists( 'windy_featured_slider' ) ) {
 
 								$i = 0;
 
-								while ( $query->have_posts() ) : $query->the_post();
+								while ( $query->have_posts() && $i <= 2 ) : $query->the_post();
 									
 									$i++;
 
@@ -45,7 +45,12 @@ if ( ! function_exists( 'windy_featured_slider' ) ) {
 										
 									  echo  '<div class="carousel-item '. $isActive .'">
 											      <img class="d-block w-100" style="height:400px;" src="' . get_the_post_thumbnail_url() . '" alt="'. get_the_title() .'">
+													  <div class="carousel-caption d-none d-md-block">
+													    <h2 class="heading-carousel"><a href="'. get_the_permalink() .'">'. get_the_title() .'</a></h2>
+													    <p>'. wp_trim_words( get_the_excerpt(), 30, '...' ) .'</p>
+													  </div>
 											    </div>';
+									
 									}
 
 								endwhile;
