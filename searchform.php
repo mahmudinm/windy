@@ -3,9 +3,9 @@
 	<div class="input-group mb-3">
 
 	  <input type="text" class="form-control search-field" 
-	      placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ) ?>"
+	      placeholder="<?php echo 'Search …' ?>"
 	            value="<?php echo get_search_query() ?>" name="s"
-	            title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>">		
+	            title="<?php echo 'Search for:' ?>">		
 
 	  <div class="input-group-append">
 
