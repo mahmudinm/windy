@@ -48,7 +48,7 @@ function windy_customize_register( $wp_customize ) {
 
 			$wp_customize->add_setting( 'social_color', array(
 				'type'                 => 'theme_mod',
-				'default'              => __( 'transparent', 'windy' )
+				'default'              => __( '#fff', 'windy' )
 			) );
 
 			$wp_customize->add_control( new WP_Customize_Color_Control(

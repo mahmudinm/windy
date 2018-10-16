@@ -11,7 +11,7 @@
 				background-color: <?= get_theme_mod( 'navbar_color', '#3f72af' ); ?> !important;
 			}
 			.social_icon {
-		    background: <?= get_theme_mod( 'social_color', 'transparent' ); ?>;
+		    background: <?= get_theme_mod( 'social_color', '#fff' ); ?>;
 			}
 		</style>
 		<?php if (is_admin_bar_showing()): ?>
@@ -35,7 +35,7 @@
 				<a class="navbar-brand" href="<?= esc_url( home_url('/') ); ?>">
 					<?= get_bloginfo( 'title' ); ?>	
 				</a>
-				<button class="navbar-toggler hamburger hamburger--elastic" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 					<!-- <span class="navbar-toggler-icon"></span> -->
 				  <span class="hamburger-box">
 				    <span class="hamburger-inner"></span>
