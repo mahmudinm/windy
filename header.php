@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
 		<title><?= get_bloginfo( 'title' ); ?></title>
 		<?php wp_head(); ?>
 		<style>
@@ -29,7 +28,7 @@
 		<?php endif ?>
 	</head>
 
-	<body>
+	<body <?php body_class(); ?>>
 		<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-custom">
 			<div class="container">
 				<?= get_custom_logo( 'custom-logo' ); ?>					
