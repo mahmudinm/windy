@@ -2,9 +2,9 @@
 Theme Name: Windy Theme
 Author: Mahmudinm
 Author URI: http://mahmudinm.github.io
-Description: Windy Theme for blogging Wordpress
+Description: Windy Is Theme for blogging Wordpress minimalist theme
 Version: 1.0.0
-Tags: bootstrap
+Tags: bootstrap, blog, carousel, social widget, full-width page
 # Load font-google
 # Body
 # Navbar
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 		    bottom: 0;
 		    transform: rotate(-90deg);
 		    transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }	    
-		  
+
 /*--------------------------------------------------------------
 ## Content Index
 --------------------------------------------------------------*/
