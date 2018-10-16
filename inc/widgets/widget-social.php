@@ -12,7 +12,7 @@ class windy_social_widget extends WP_Widget
 	    	'classname' => 'windy_social',
 	    	'description' => 'This is an Examplle Widget'
 	    );
-	    parent::__construct( 'windy_social', 'windy Social Widget', $widget_options );
+	    parent::__construct( 'windy_social', 'Windy Social Widget', $widget_options );
 	}
 
 	public function widget( $args, $instance )

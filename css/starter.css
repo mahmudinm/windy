@@ -56,12 +56,23 @@
 	object-fit: cover;
 }
 
+/*--------------------------------------------------------------
+## Social Icon
+--------------------------------------------------------------*/
 .social_icon {
-    background: purple;
     padding: 10px;
-    color: #fff;
+    color: #007bff;
     border-radius: 5px;
-    margin-left: 3px;    
+    margin-left: 3px;
+    border: 1px solid #007bff;
+    width: 40px;      
+    background: #fff;
+    transition: all .4s ease;
+}
+
+.social_icon:hover {
+    background: #007bff;
+    color: #fff;
 }
 
 .social-icons {
@@ -69,6 +80,7 @@
     margin-bottom: 20px;
     text-align: center;
 }
+
 #secondary .widget .social-icons {
     text-align: left;
 }
@@ -85,6 +97,7 @@
 #social li a span {
     display: none;
 }
+
 
 .footer {
 	padding: 20px;

@@ -18,8 +18,8 @@ if ( ! function_exists( 'windy_social_icons' ) ) :
 					'menu_id' => 'menu-social-items',
 					'menu_class' => 'social_menu',
 					'depth' => 1,
-							'link_before' => '<i class="social_icon fa"><span>',
-							'link_after' => '</span></i>'
+					'link_before' => '<i class="social_icon fa"><span>',
+					'link_after' => '</span></i>'
 				) 
 			);
 		}
