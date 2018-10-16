@@ -1,4 +1,6 @@
 <?php  
+
+// Tambah span data-hover pada sebelum a href pada menu
 // turn it on
 add_filter( 'wp_nav_menu_objects', function( $items )
 {

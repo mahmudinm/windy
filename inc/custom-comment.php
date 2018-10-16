@@ -56,7 +56,7 @@ if ( ! function_exists( 'windy_bootstrap_comment_form' ) ) {
 	    <label for="comment">' . _x( 'Comment', 'noun', 'windy' ) . ( ' <span class="required">*</span>' ) . '</label>
 	    <textarea class="form-control coment-form" id="comment" name="comment" aria-required="true" cols="45" rows="8"></textarea>
 	    </div>';
-		$args['class_submit']  = 'btn btn-secondary btn--coment'; // since WP 4.1.
+		$args['class_submit']  = 'btn btn-outline-primary btn--pagination'; // since WP 4.1.
 		return $args;
 	}
 } // endif function_exists( 'windy_bootstrap_comment_form' )

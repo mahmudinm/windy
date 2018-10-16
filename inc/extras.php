@@ -1,6 +1,6 @@
 <?php  
 
-
+// Slider
 function windy_cats() {
 	$cats = [];
 	$cats[0] = 'All';
@@ -72,7 +72,6 @@ if ( ! function_exists( 'windy_featured_slider' ) ) {
 }
 
 // Custom site logo
-
 add_filter( 'get_custom_logo', 'change_logo_class' );
 function change_logo_class( $html ) {
 
