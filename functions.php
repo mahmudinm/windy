@@ -90,6 +90,41 @@ function posts_link_attributes_2() {
 // Setup Windy
 function windy_setup() {
 
+
+	/*
+	 * Make theme available for translation.
+	 * Translations can be filed in the /languages/ directory.
+	 * If you're building a theme based on Windy, use a find and replace
+	 * to change 'windy' to the name of your theme in all the template files.
+	 */
+	load_theme_textdomain( 'windy', get_template_directory() . '/languages' );
+
+	// Add default posts and comments RSS feed links to head.
+	add_theme_support( 'automatic-feed-links' );	
+
+	/*
+	 * Let WordPress manage the document title.
+	 * By adding theme support, we declare that this theme does not use a
+	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * provide it for us.
+	 */
+	add_theme_support( 'title-tag' );
+
+	/*
+	 * Switch default core markup for search form, comment form, and comments
+	 * to output valid HTML5.
+	 */
+	add_theme_support( 'html5', array(
+		'search-form',
+		'comment-form',
+		'comment-list',
+		'gallery',
+		'caption',
+	) );	
+
+	// Add theme support for selective refresh for widgets.
+	add_theme_support( 'customize-selective-refresh-widgets' );		
+
 	add_theme_support( 'post-thumbnails' );			
 	add_theme_support( 'custom-background' );
 	add_theme_support( 'custom-logo', array(
@@ -100,6 +135,23 @@ function windy_setup() {
 
 }
 add_action( 'after_setup_theme', 'windy_setup' );
+
+
+/**
+ * Set the content width in pixels, based on the theme's design and stylesheet.
+ *
+ * Priority 0 to make it available to lower priority callbacks.
+ *
+ * @global int $content_width
+ */
+function windy_content_width() {
+	// This variable is intended to be overruled from themes.
+	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
+	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+	$GLOBALS['content_width'] = apply_filters( 'windy_content_width', 640 );
+}
+add_action( 'after_setup_theme', 'windy_content_width', 0 );
+
 
 
 
@@ -113,8 +165,14 @@ require_once get_template_directory() .'/inc/customizer.php';
 
 require_once get_template_directory() .'/inc/custom-comment.php';
 
-require_once get_template_directory() .'/inc/custom-comment.php';
-
 require_once get_template_directory() .'/inc/social-nav.php';
+
+/**
+ * Load Jetpack compatibility file.
+ */
+if ( defined( 'JETPACK__VERSION' ) ) {
+	require get_template_directory() . '/inc/jetpack.php';
+}
+
 
 ?>

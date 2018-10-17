@@ -6,12 +6,10 @@
 			
 			</div><!-- End container -->
 
-				<div style="background: url(<?= get_the_post_thumbnail_url( null, 'large' ); ?>) no-repeat;background-size: cover;" class="hero-page">
+				<div style="background: url(<?= get_the_post_thumbnail_url( 'large' ); ?>) no-repeat;background-size: cover;" class="hero-page">
 
 					<?php while (have_posts()): the_post(); ?>
 							
-							<!-- <?= get_the_post_thumbnail_url( null, 'large' ); ?> -->
-
 							<h2 class="text-center hero-page__heading"><?php the_title(); ?></h2>
 
 					<?php endwhile ?>

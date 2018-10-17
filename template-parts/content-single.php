@@ -41,6 +41,8 @@
 	<!-- Comment -->
 	<?php  
 
+		the_post_navigation();
+
 		if (comments_open()) {
 
 			comments_template();					

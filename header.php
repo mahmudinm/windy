@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="profile" href="https://gmpg.org/xfn/11">
-		<title><?= get_bloginfo( 'title' ); ?></title>
 		<?php wp_head(); ?>
 		<style>
 			.bg-custom {
@@ -32,9 +31,7 @@
 		<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-custom">
 			<div class="container">
 				<?= get_custom_logo( 'custom-logo' ); ?>					
-				<a class="navbar-brand" href="<?= esc_url( home_url('/') ); ?>">
-					<?= get_bloginfo( 'title' ); ?>	
-				</a>
+				<a class="navbar-brand" href="<?= esc_url( home_url('/') ); ?>"><?php bloginfo( 'title' ); ?></a>
 				<button class="navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 					<!-- <span class="navbar-toggler-icon"></span> -->
 				  <span class="hamburger-box">
