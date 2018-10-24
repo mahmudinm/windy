@@ -7,10 +7,10 @@
 		<?php wp_head(); ?>
 		<style>
 			.bg-custom {
-				background-color: <?= get_theme_mod( 'navbar_color', '#3f72af' ); ?> !important;
+				background-color: <?php echo get_theme_mod( 'navbar_color', '#3f72af' ); ?> !important;
 			}
 			.social_icon {
-		    background: <?= get_theme_mod( 'social_color', '#fff' ); ?>;
+		    background: <?php echo get_theme_mod( 'social_color', '#fff' ); ?>;
 			}
 		</style>
 		<?php if (is_admin_bar_showing()): ?>
@@ -30,8 +30,8 @@
 	<body <?php body_class(); ?>>
 		<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-custom">
 			<div class="container">
-				<?= get_custom_logo( 'custom-logo' ); ?>					
-				<a class="navbar-brand" href="<?= esc_url( home_url('/') ); ?>"><?php bloginfo( 'title' ); ?></a>
+				<?php echo get_custom_logo( 'custom-logo' ); ?>					
+				<a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo( 'name' ); ?></a>
 				<button class="navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 					<!-- <span class="navbar-toggler-icon"></span> -->
 				  <span class="hamburger-box">
@@ -56,8 +56,8 @@
 
 		<div class="container">
 			
-			<div class="">
+			<div>
 
-				<?= windy_featured_slider(); ?>
+				<?php windy_featured_slider(); ?>
 				
 			</div>
