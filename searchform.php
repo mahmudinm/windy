@@ -3,7 +3,7 @@
 	<div class="input-group mb-3">
 
 	  <input type="text" class="form-control search-field" 
-	      placeholder="<?php echo 'Search …' ?>"
+	      placeholder="Search ..."
 	            value="<?php echo get_search_query() ?>" name="s"
 	            title="<?php echo 'Search for:' ?>">		
 

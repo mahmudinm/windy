@@ -1,53 +1,57 @@
-<div class="py-4 px-3 content">
-	<!-- Thumbnail -->
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php if (has_post_thumbnail()): ?>
+	<div class="py-4 px-3 content">
+		<!-- Thumbnail -->
 
-		<?php the_post_thumbnail( 'post-thumbnail', ['class' => 'img-fluid'] ); ?>
+		<?php if (has_post_thumbnail()): ?>
 
-	<?php endif ?>
+			<?php the_post_thumbnail( 'post-thumbnail', ['class' => 'img-fluid'] ); ?>
 
-	<!-- Header -->
+		<?php endif ?>
 
-	<h1 class="mt-4"><?php the_title(); ?></h1>
+		<!-- Header -->
 
-	<p><?php the_time('F jS Y g:i a'); ?></p>			
+		<h1 class="mt-4"><?php the_title(); ?></h1>
 
-	<?php 
+		<p><?php the_time('F jS Y g:i a'); ?></p>			
 
-		$categories = get_the_category();
+		<?php 
 
-		$separator = " ";
+			$categories = get_the_category();
 
-		$output = '';
+			$separator = " ";
 
-		if ($categories) {
+			$output = '';
 
-			foreach ($categories as $category){
+			if ($categories) {
 
-				$output .= '<a href="'.get_category_link($category->term_id).'" class="content__badge">'.$category->cat_name.'</a>'.$separator;
+				foreach ($categories as $category){
 
+					$output .= '<a href="'.get_category_link($category->term_id).'" class="content__badge">'.$category->cat_name.'</a>'.$separator;
+
+				}
+				
+				echo trim($output, $separator);
 			}
 			
-			echo trim($output, $separator);
-		}
-		
-	?>	<br><br>		
+		?>	<br><br>		
 
-	<b>Created by : <?php the_author(); ?></b> <br>
+		<b>Created by : <?php the_author(); ?></b> <br>
 
-	<p><?php the_content(); ?></p>
+		<p><?php the_content(); ?></p>
 
-	<!-- Comment -->
-	<?php  
+		<!-- Comment -->
+		<?php  
 
-		the_post_navigation();
+			the_post_navigation();
 
-		if (comments_open()) {
+			if (comments_open()) {
 
-			comments_template();					
+				comments_template();					
 
-		} 
+			} 
 
-	?>	
-</div>
+		?>	
+	</div>
+	
+</article>

@@ -6,7 +6,7 @@
 			
 			</div><!-- End container -->
 
-				<div style="background: url(<?= get_the_post_thumbnail_url( 'large' ); ?>) no-repeat;background-size: cover;" class="hero-page">
+				<div style="background: url(<?php echo get_the_post_thumbnail_url( 'large' ); ?>) no-repeat;background-size: cover;" class="hero-page">
 
 					<?php while (have_posts()): the_post(); ?>
 							
