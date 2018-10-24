@@ -31,7 +31,16 @@
 		<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-custom">
 			<div class="container">
 				<?php echo get_custom_logo( 'custom-logo' ); ?>					
-				<a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo( 'name' ); ?></a>
+				<a class="navbar-brand site-title" href="<?php echo esc_url( home_url('/') ); ?>">
+					<?php bloginfo( 'name' ); ?>
+				</a>
+				<br>
+				<?php $test_description = get_bloginfo( 'description', 'display' ); ?>
+				<?php if ( $test_description || is_customize_preview() ) : ?>
+					<p class="site-description"><?php echo $test_description; /* WPCS: xss ok. */ ?></p>
+				<?php endif; ?>		
+
+
 				<button class="navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 					<!-- <span class="navbar-toggler-icon"></span> -->
 				  <span class="hamburger-box">

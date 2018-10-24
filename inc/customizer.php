@@ -10,6 +10,7 @@ function windy_customize_register( $wp_customize ) {
 	
 			$wp_customize->add_setting( 'navbar_color', array(
 				'type'                 => 'theme_mod',
+				'sanitize_callback' => 'esc_attr',
 				'default'              => __( '#3f72af', 'windy' )
 			) );
 
@@ -25,6 +26,7 @@ function windy_customize_register( $wp_customize ) {
 	
 			$wp_customize->add_setting( 'navbar_align', array(
 				'type'                 => 'theme_mod',
+				'sanitize_callback' => 'esc_attr',
 				'default'              => __( 'ml-auto', 'windy' )
 			) );
 
@@ -48,6 +50,7 @@ function windy_customize_register( $wp_customize ) {
 
 			$wp_customize->add_setting( 'social_color', array(
 				'type'                 => 'theme_mod',
+				'sanitize_callback' => 'esc_attr',
 				'default'              => __( '#fff', 'windy' )
 			) );
 

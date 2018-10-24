@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 ## Navbar Custom
 --------------------------------------------------------------*/
+.site-description {
+	margin-bottom: 0;
+}
+
 .navbar-dark .navbar-nav .nav-link {
 	font-family: 'Poppins', sans-serif;
 	color: #fff;

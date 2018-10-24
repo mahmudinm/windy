@@ -68,7 +68,7 @@ function windy_widget() {
 }
 add_action( 'widgets_init', 'windy_widget' );
 
-require_once( get_template_directory() . '/inc/widgets/widget-social.php' );
+require( get_template_directory() . '/inc/widgets/widget-social.php' );
 
 // Replaces the excerpt "Read More" text by a link
 
@@ -113,6 +113,8 @@ function windy_setup() {
 	 */
 	add_theme_support( 'title-tag' );
 
+	
+	add_editor_style( 'css/editor-style.css' );
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -158,17 +160,21 @@ add_action( 'after_setup_theme', 'windy_content_width', 0 );
 
 
 
-require_once get_template_directory() .'/inc/filter_menu_nav.php';
+require get_template_directory() .'/inc/custom-header.php';
 
-require_once get_template_directory() .'/inc/extras.php';
+require get_template_directory() .'/inc/filter_menu_nav.php';
 
-require_once get_template_directory() .'/inc/class-wp-bootstrap-navwalker.php';
+require get_template_directory() .'/inc/extras.php';
 
-require_once get_template_directory() .'/inc/customizer.php';
+require get_template_directory() .'/inc/class-wp-bootstrap-navwalker.php';
 
-require_once get_template_directory() .'/inc/custom-comment.php';
+require get_template_directory() .'/inc/customizer.php';
 
-require_once get_template_directory() .'/inc/social-nav.php';
+require get_template_directory() .'/inc/custom-comment.php';
+
+require get_template_directory() .'/inc/social-nav.php';
+
+require get_template_directory() . '/inc/template-tags.php';
 
 /**
  * Load Jetpack compatibility file.
