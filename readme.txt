@@ -1,22 +1,18 @@
-# About Theme
-
-Theme Name: Windy<br>
-Version: 1.2.1<br>
-Tested up to: WP 4.9.8<br>
-
-Author: Mahmudin muttaqin<br>
-Author URI: http://mahmudinm.github.io<br>
-
 === Theme Name ===
+
+Theme Name: Windy
+Version: 1.2.2
+
+Author: Mahmudin Muttaqin
+Author URI: https://mahmudinm.github.io
+
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 4.9.8
-Stable tag: 1.0.0
+Stable tag: 1.2.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
-
-Short description. No more than 150 chars.
 
 == Description ==
 
@@ -32,7 +28,7 @@ Description
 
 = Does this theme support any plugins? =
 
-Test includes support for Infinite Scroll in Jetpack.
+Windy includes support for Infinite Scroll in Jetpack.
 
 An answer to that question.
 
