@@ -1,29 +1,58 @@
 # About Theme
 
 Theme Name: Windy<br>
-Version: 1.0.0<br>
+Version: 1.2.1<br>
 Tested up to: WP 4.9.8<br>
 
 Author: Mahmudin muttaqin<br>
 Author URI: http://mahmudinm.github.io<br>
--------------------------------------------------------
 
-# Screenshot
-![Screeshot index page](https://github.com/mahmudinm/windy/blob/master/screenshot.png)
+=== Theme Name ===
+Contributors: automattic
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Requires at least: 4.5
+Tested up to: 4.9.8
+Stable tag: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
 
-# Credits
+Short description. No more than 150 chars.
+
+== Description ==
+
+Description
+
+== Installation ==
+
+1. In your admin panel, go to Appearance > Themes and click the Add New button.
+2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
+3. Click Activate to use your new theme right away.
+
+== Frequently Asked Questions ==
+
+= Does this theme support any plugins? =
+
+Test includes support for Infinite Scroll in Jetpack.
+
+An answer to that question.
+
+== Changelog ==
+
+= 1.0.0 =
+* Initial Release
+
+= 1.2.1 =
+* Fix Several Check themes
+
+= 1.2.2 =
+* Fix screenshot.png and readme.txt
+
+
+== Credits ==
+
+* Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
 * FontAwesome (http://fontawesome.io) 
 * Bootstrap (http://getbootstrap.com/) 
 * Hamburgers Animation (https://jonsuh.com/hamburgers/)
 * WP-Bootstrap-NavWalker (https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
--------------------------------------------------------
-
-# Theme Features
-* Bootstrap 4 integration
-* Responsive design
-* WordPress Theme Customizer support
-* Drop-down Menu
-* Cross-browser compatibility
-* Threaded Comments
-* Carousel
-* Font Awesome icons
